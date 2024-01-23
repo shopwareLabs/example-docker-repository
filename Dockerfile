@@ -20,4 +20,4 @@ RUN --mount=type=secret,id=composer_auth,dst=/src/auth.json \
 
 FROM base-image
 
-COPY --from=build --chown=www-data --link /src /var/www/html
+COPY --from=build --chown=82 --link /src /var/www/html
