@@ -1,0 +1,37 @@
+/.idea
+/vendor
+###> shopware/core ###
+.env.local
+.env.local.php
+.env.*.local
+custom/*
+!custom/plugins/.gitkeep
+!custom/static-plugins/
+/public/fonts/*
+!/public/fonts/.gitkeep
+/public/img/*
+!/public/img/.gitkeep
+/public/css/*
+!/public/css/.gitkeep
+/public/js/*
+!/public/js/.gitkeep
+/public/media/*
+!/public/media/.gitkeep
+/public/theme/*
+!/public/theme/.gitkeep
+/public/thumbnail/*
+!/public/thumbnail/.gitkeep
+/public/assets/*
+/public/sitemap/*
+!/public/sitemap/.gitkeep
+/public/bundles/*
+!/public/bundles/.gitkeep
+/files/*
+/var/*
+!/var/log/.gitkeep
+!/var/cache/.gitkeep
+/auth.json
+/install.lock
+public/asset-manifest.json
+files/asset-manifest.json
+###< shopware/core ###

@@ -1,0 +1,237 @@
+{
+    "doctrine/annotations": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
+    },
+    "nyholm/psr7": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "4a8c0345442dcca1d8a2c65633dcf0285dd5a5a2"
+        },
+        "files": [
+            "config/packages/nyholm_psr7.yaml"
+        ]
+    },
+    "shopware/administration": {
+        "version": "6.5",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.4",
+            "ref": "8918e98afb02fb70cf8f63df9162b00d8bcd7f10"
+        },
+        "files": [
+            "bin/build-administration.sh",
+            "bin/watch-administration.sh"
+        ]
+    },
+    "shopware/core": {
+        "version": "6.5",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.4",
+            "ref": "8e8963179f43502ca41d5f05dc6fe1a1dc292903"
+        },
+        "files": [
+            "bin/.htaccess",
+            "bin/build-js.sh",
+            "bin/ci",
+            "bin/console",
+            "bin/functions.sh",
+            "config/jwt/.gitignore",
+            "config/packages/shopware.yaml",
+            "custom/.htaccess",
+            "custom/apps/.gitignore",
+            "custom/plugins/.gitignore",
+            "custom/static-plugins/.gitignore",
+            "files/.htaccess",
+            "public/.htaccess.dist",
+            "public/index.php",
+            "public/maintenance.html",
+            "var/.htaccess",
+            ".htaccess"
+        ]
+    },
+    "shopware/docker": {
+        "version": "0.1",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "0.1",
+            "ref": "7fcca6c520cfe002ba0673629d120631df9b5d42"
+        },
+        "files": [
+            "docker/Dockerfile",
+            "config/packages/prod/production_docker.yaml"
+        ]
+    },
+    "shopware/elasticsearch": {
+        "version": "6.5",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.4",
+            "ref": "f68a89cacedf3e2132444874e1e1e3c4864dae6d"
+        },
+        "files": [
+            "config/packages/elasticsearch.yaml"
+        ]
+    },
+    "shopware/storefront": {
+        "version": "6.5",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.4",
+            "ref": "e205f77b7355f066a15f319a8ca6e2cc986e5540"
+        },
+        "files": [
+            "bin/build-storefront.sh",
+            "bin/watch-storefront.sh"
+        ]
+    },
+    "symfony/console": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "5.4",
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
+    },
+    "symfony/debug-bundle": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "5aa8aa48234c8eb6dbdd7b3cd5d791485d2cec4b"
+        },
+        "files": [
+            "config/packages/debug.yaml"
+        ]
+    },
+    "symfony/flex": {
+        "version": "2.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "146251ae39e06a95be0fe3d13c807bcf3938b172"
+        },
+        "files": [
+            ".env"
+        ]
+    },
+    "symfony/framework-bundle": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "5.4",
+            "ref": "bb1cc9e0b12d1b8c2ca2b1a8ae48c9917e338289"
+        },
+        "files": [
+            "config/services.yaml"
+        ]
+    },
+    "symfony/lock": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.2",
+            "ref": "8e937ff2b4735d110af1770f242c1107fdab4c8e"
+        },
+        "files": [
+            "config/packages/lock.yaml"
+        ]
+    },
+    "symfony/mailer": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "4.3",
+            "ref": "df66ee1f226c46f01e85c29c2f7acce0596ba35a"
+        },
+        "files": [
+            "config/packages/mailer.yaml"
+        ]
+    },
+    "symfony/messenger": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.0",
+            "ref": "15c3e1ff429760e3309e821ebd4a675f7cbfe2ba"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
+    "symfony/monolog-bundle": {
+        "version": "3.8",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "3.3",
+            "ref": "3a0c7880838a109976a75560b39468a79985e892"
+        },
+        "files": [
+            "config/packages/dev/monolog.yaml",
+            "config/packages/prod/deprecations.yaml",
+            "config/packages/prod/monolog.yaml",
+            "config/packages/test/monolog.yaml"
+        ]
+    },
+    "symfony/routing": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "5.4",
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
+    },
+    "symfony/translation": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "5.4",
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
+    },
+    "symfony/twig-bundle": {
+        "version": "6.3",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "5.4",
+            "ref": "99277800a8f532fc369df7148804ed3d257c69c0"
+        }
+    },
+    "symfony/validator": {
+        "version": "6.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
+        },
+        "files": [
+            "config/packages/validator.yaml"
+        ]
+    }
+}
