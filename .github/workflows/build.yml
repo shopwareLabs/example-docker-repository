@@ -21,8 +21,11 @@ jobs:
             export "name=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest"
             echo "image=${name,,}" >> ${GITHUB_OUTPUT}
 
-        - name: Build image
-          run: shopware-cli project docker build ${{ steps.image.outputs.image }}
+        - name: Generate image
+          run: shopware-cli project docker build ${{ steps.image.outputs.image }} --generate-only
 
-        - name: Push
-          run: docker push ${{ steps.image.outputs.image }}
+        - name: Build and push
+          uses: docker/build-push-action@v5
+          with:
+            push: true
+            tags: ${{ steps.image.outputs.image }}
