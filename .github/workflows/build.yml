@@ -15,8 +15,14 @@ jobs:
         - name: Install Shopware-CLI
           uses: FriendsOfShopware/shopware-cli-action@v1
 
+        - name: Make image name small
+          id: image
+          run: |
+            export "name=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest"
+            echo "image=${name,,}" >> ${GITHUB_OUTPUT}
+
         - name: Build image
-          run: shopware-cli project docker build ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+          run: shopware-cli project docker build ${{ steps.image.outputs.image }}
 
         - name: Push
           run: docker push ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
