@@ -25,4 +25,4 @@ jobs:
           run: shopware-cli project docker build ${{ steps.image.outputs.image }}
 
         - name: Push
-          run: docker push ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+          run: docker push ${{ steps.image.outputs.image }}
