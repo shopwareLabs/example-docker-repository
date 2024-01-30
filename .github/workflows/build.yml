@@ -1,0 +1,22 @@
+name: Build Image
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+
+        - name: Login into Github Docker Registery
+          run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+        - name: Install Shopware-CLI
+          uses: FriendsOfShopware/shopware-cli-action@v1
+
+        - name: Build image
+          run: shopware-cli project docker build ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+
+        - name: Push
+          run: docker push ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
