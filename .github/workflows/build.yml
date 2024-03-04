@@ -24,25 +24,8 @@ jobs:
             export "name=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest"
             echo "image=${name,,}" >> ${GITHUB_OUTPUT}
 
-        - name: Cache Composer
-          id: cache-composer-files
-          uses: actions/cache@v3
-          with:
-            path: composer-cache-files
-            key: composer-cache-${{ hashFiles('composer.lock') }}
-
-        - name: Inject Cache
-          uses: reproducible-containers/buildkit-cache-dance@v2.1.4
-          with:
-            cache-source: composer-cache-files
-            cache-target: /root/.composer
-            skip-extraction: ${{ steps.cache-composer-files.outputs.cache-hit }}
-
         - name: Generate image
-          run: shopware-cli project docker build ${{ steps.image.outputs.image }} --generate-only
-
-        - name: Show Dockerfile
-          run: cat Dockerfile
+          run: docker build -t ${{ steps.image.outputs.image }} .
 
         - name: Build and push
           uses: docker/build-push-action@v5
