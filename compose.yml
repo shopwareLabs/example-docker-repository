@@ -16,7 +16,7 @@ x-environment: &shopware
 
 services:
   database:
-    image: mysql:8-oracle
+    image: mysql:8.0-oracle
     environment:
       MYSQL_ROOT_PASSWORD: shopware
       MYSQL_USER: shopware
