@@ -16,16 +16,16 @@ x-environment: &shopware
 
 services:
   database:
-    image: mysql:8.0-oracle
+    image: mariadb:11.4
     environment:
-      MYSQL_ROOT_PASSWORD: shopware
-      MYSQL_USER: shopware
-      MYSQL_PASSWORD: shopware
-      MYSQL_DATABASE: shopware
+      MARIADB_ROOT_PASSWORD: shopware
+      MARIADB_USER: shopware
+      MARIADB_PASSWORD: shopware
+      MARIADB_DATABASE: shopware
     tmpfs:
       - /var/lib/mysql
     healthcheck:
-      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost", "-pshopware" ]
+      test: [ "CMD", "mariadb-admin" ,"ping", "-h", "localhost", "-pshopware" ]
       timeout: 20s
       retries: 10
 
