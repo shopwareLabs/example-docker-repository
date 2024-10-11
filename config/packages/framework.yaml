@@ -1,0 +1,4 @@
+framework:
+    cache:
+        app: cache.adapter.redis_tag_aware
+        default_redis_provider: 'redis://cache:6379'

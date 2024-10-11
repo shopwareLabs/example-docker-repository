@@ -8,8 +8,6 @@ parameters:
     default_cdn_strategy: 'physical_filename'
     shopware.cdn.strategy: '%env(default:default_cdn_strategy:SHOPWARE_CDN_STRATEGY_DEFAULT)%'
     env(OPENSEARCH_URL): 'http://localhost:9200'
-    env(JWT_PRIVATE_KEY): ''
-    env(JWT_PUBLIC_KEY): ''
 
 services:
     # default configuration for services in *this* file
