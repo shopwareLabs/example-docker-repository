@@ -201,14 +201,11 @@
     "symfony/property-info": {
         "version": "7.3",
         "recipe": {
-            "repo": "github.com/symfony/recipes",
+            "repo": "github.com/shopware/recipes",
             "branch": "main",
             "version": "7.3",
-            "ref": "dae70df71978ae9226ae915ffd5fad817f5ca1f7"
-        },
-        "files": [
-            "config/packages/property_info.yaml"
-        ]
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
     },
     "symfony/routing": {
         "version": "6.4",
