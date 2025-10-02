@@ -1,3 +1,0 @@
-docker:
-  php:
-    version: '8.2'
