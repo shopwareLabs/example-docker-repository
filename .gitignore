@@ -15,6 +15,6 @@
 !/var/.htaccess
 /auth.json
 /install.lock
-public/asset-manifest.json
-files/asset-manifest.json
+/public/asset-manifest.json
+/files/asset-manifest.json
 ###< shopware/core ###

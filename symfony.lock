@@ -8,6 +8,15 @@
             "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
         }
     },
+    "doctrine/deprecations": {
+        "version": "1.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "87424683adc81d7dc305eefec1fced883084aab9"
+        }
+    },
     "nyholm/psr7": {
         "version": "1.8",
         "recipe": {
@@ -15,6 +24,15 @@
             "branch": "main",
             "version": "1.0",
             "ref": "0153f89d0bffd66e897afb8c2623e3920aef2c9f"
+        }
+    },
+    "pentatrion/vite-bundle": {
+        "version": "8.2",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "6.5",
+            "ref": "8cc0e41387cb37cb65cc9a1ce8bac7eed899687a"
         }
     },
     "shopware/administration": {
@@ -180,6 +198,15 @@
         },
         "files": []
     },
+    "symfony/property-info": {
+        "version": "7.3",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "7.3",
+            "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
+        }
+    },
     "symfony/routing": {
         "version": "6.4",
         "recipe": {
@@ -188,6 +215,16 @@
             "version": "5.4",
             "ref": "d7afb8d11ee0e18f644cc77c2df9b372e89cb3a9"
         }
+    },
+    "symfony/scheduler": {
+        "version": "7.3",
+        "recipe": {
+            "repo": "github.com/shopware/recipes",
+            "branch": "main",
+            "version": "7.2",
+            "ref": "88069c76a8133d37a373b1299fb3ab927f252c45"
+        },
+        "files": []
     },
     "symfony/translation": {
         "version": "6.4",
