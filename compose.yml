@@ -41,7 +41,7 @@ services:
     <<: *shopware
     build:
       context: .
-    entrypoint: /setup
+    entrypoint: [ "php", "vendor/bin/shopware-deployment-helper", "run" ]
     depends_on:
       database:
         condition: service_healthy
